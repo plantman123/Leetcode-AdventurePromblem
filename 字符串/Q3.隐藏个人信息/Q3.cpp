@@ -11,7 +11,6 @@ static string email(string s, int at_idx) {
     res_str += s[at_idx-1];
     return res_str + s.substr(at_idx, s.length()-at_idx);
 }
-
 static string phonenumvber(string s) {
     string reverse_number = "";
     int cnt = 0;
@@ -41,7 +40,6 @@ static string phonenumvber(string s) {
     for (int i=reverse_number.length()-1;i>=0;i--) formal_number += reverse_number[i];
     return formal_number; 
 }
-
 public:
     string maskPII(string s) {
         int at_idx = 0;  // 1：@  0：number
